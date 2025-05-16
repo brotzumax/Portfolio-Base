@@ -1,0 +1,15 @@
+@use "variables";
+@use "mixins";
+@use "layout";
+@use "components";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: variables.$font-base;
+  background-color: variables.$color-bg;
+}
