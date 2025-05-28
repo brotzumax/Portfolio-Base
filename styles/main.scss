@@ -3,13 +3,38 @@
 @use "layout";
 @use "components";
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
 }
 
 body {
   font-family: variables.$font-base;
   background-color: variables.$color-bg;
+}
+
+$line-color: rgba(255, 255, 255, 0.3);
+
+.hero {
+  background-color: variables.$color-vscode-bg;
+
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+
+  h1{
+    color: white;
+    font-family: variables.$font-base;
+    font-size: 50px;
+  }
 }
