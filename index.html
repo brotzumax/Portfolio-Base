@@ -31,28 +31,45 @@
         sumergirme en el mundo del desarrollo de software. Mi enfoque principal ha sido en el desarrollo web y aquí
         tienes un vistazo a mi viaje hasta ahora:
       </p>
-      <ul>
-        <li>
-          Experiencia Diversa: Comencé mi camino en el desarrollo explorando Java, C#, y MySQL, y luego decidí ampliar
+
+      <div class="Container_Skills">
+        <div class="SkillList">
+          <div class="SkillList_Title">
+            Experiencia Diversa:
+          </div>
+          Comencé mi camino en el desarrollo explorando Java, C#, y MySQL, y luego decidí ampliar
           mis horizontes a través de cursos en línea.
-        </li>
-        <li>
-          Certificaciones Valiosas: He obtenido certificaciones como Desarrollador Web y un certificado destacado en
+        </div>
+        <div class="SkillList">
+          <div class="SkillList_Title">
+            Certificaciones Valiosas:
+          </div>
+          He obtenido certificaciones como Desarrollador Web y un certificado destacado en
           JavaScript. Mi objetivo es seguir mejorando y adquiriendo nuevas habilidades.
-        </li>
-        <li>
-          Dominio Técnico: Mis habilidades abarcan HTML, CSS, GIT, GitHub, Bootstrap y SASS. Además, tengo experiencia
+        </div>
+        <div class="SkillList">
+          <div class="SkillList_Title">
+            Dominio Técnico:
+          </div>
+          Mis habilidades abarcan HTML, CSS, GIT, GitHub, Bootstrap y SASS. Además, tengo experiencia
           trabajando con archivos JSON, integrando librerías y utilizando APIs.
-        </li>
-        <li>
-          React JS: Exploré este framework y culminé mi aprendizaje con la creación de una página web para un banco
+        </div>
+        <div class="SkillList">
+          <div class="SkillList_Title">
+            React JS:
+          </div>
+          Exploré este framework y culminé mi aprendizaje con la creación de una página web para un banco
           ficticio.
-        </li>
-        <li>
-          Back-End Profesional: También obtuve experiencia en el desarrollo Back-End, creando Servidores API Rest con
+        </div>
+        <div class="SkillList">
+          <div class="SkillList_Title">
+            Back-End Profesional:
+          </div>
+          También obtuve experiencia en el desarrollo Back-End, creando Servidores API Rest con
           Node.js, Express y otras tecnologías.
-        </li>
-      </ul>
+        </div>
+      </div>
+
       <p>
         Estoy comprometido con el aprendizaje continuo y estoy entusiasmado por aplicar mis habilidades en proyectos
         desafiantes. Mi objetivo es contribuir de manera positiva a equipos de desarrollo y seguir creciendo
@@ -159,44 +176,70 @@
     </div>
 
     <!-- Contacto -->
-    <div>
-      <h2>Trabajemos juntos</h2>
-      <p>Si tienes un proyecto interesante, una idea innovadora o simplemente deseas establecer una conversación, no
-        dudes en ponerte en contacto. Mi objetivo es contribuir con mi pasión por la programación y mi experiencia en
-        desarrollo web para ayudarte a alcanzar tus objetivos. ¡Espero con ansias saber de ti y comenzar esta
-        colaboración!</p>
+    <section id="Contact">
+      <div class="Container_Contact">
+        <div class="Container_ContactInfo">
+          <h2>Trabajemos juntos</h2>
+          <p>Si tienes un proyecto interesante, una idea innovadora o simplemente deseas establecer una conversación, no
+            dudes en ponerte en contacto. Mi objetivo es contribuir con mi pasión por la programación y mi experiencia
+            desarrollando para ayudarte a alcanzar tus objetivos.</p>
+          <p>
+            ¡Espero con ansias saber de ti!
+          </p>
+        </div>
 
-      <form action="enviar.php" method="POST">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required><br>
+        <div class="Vertical_Divisor">
 
-        <label for="email">Correo Electrónico:</label>
-        <input type="email" id="email" name="email" required><br>
+        </div>
 
-        <label for="asunto">Asunto:</label>
-        <input type="text" id="asunto" name="asunto" required><br>
-
-        <label for="mensaje">Mensaje:</label><br>
-        <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
-
-        <input type="submit" value="Enviar">
-      </form>
-    </div>
-
+        <div class="Container_Form">
+          <form action="enviar.php" method="POST">
+            <div class="FormData">
+              <div class="FormName">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+              </div>
+              <div class="FormEmail">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="FormSubject">
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" required>
+              </div>
+            </div>
+            <div class="FormMessage">
+              <label for="mensaje">Mensaje:</label>
+              <textarea id="mensaje" name="mensaje" required></textarea>
+            </div>
+            <input class="FormButton" type="submit" value="Enviar">
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <h4>Contacto</h4>
-    <p>brotzumaxx@gmail.com</p>
-    <h4>Enlaces</h4>
-    <p><a href="github">GitHub</a></p>
-    <p><a href="linkedin">LinkedIn</a></p>
-    <h4>Enlaces de navegacion</h4>
-    <p><a href="inicio">Inicio</a></p>
-    <p><a href="SobreMi">Sobre Mi</a></p>
-    <p><a href="Proyectos">Proyectos</a></p>
-    <p><a href="Experiencia">Experiencia</a></p>
-    <p><a href="Contacto">Contacto</a></p>
+    <div class="Container_Footer">
+      <div class="FooterContact">
+        <h4>Contacto:</h4>
+        <p>brotzumaxx@gmail.com</p>
+        <p>(+54) 0261 - 6657046</p>
+      </div>
+      <div class="FooterNav">
+        <h4>Enlaces de navegacion:</h4>
+        <p><a href="inicio">Inicio</a></p>
+        <p><a href="SobreMi">Sobre Mi</a></p>
+        <p><a href="Proyectos">Proyectos</a></p>
+        <p><a href="Experiencia">Experiencia</a></p>
+        <p><a href="Contacto">Contacto</a></p>
+      </div>
+      <div class="FooterLinks">
+        <h4>Enlaces:</h4>
+        <p><a href="github">GitHub</a></p>
+        <p><a href="linkedin">LinkedIn</a></p>
+      </div>
+    </div>
     <p>© Brotzu Maximiliano 2023</p>
   </footer>
 </body>

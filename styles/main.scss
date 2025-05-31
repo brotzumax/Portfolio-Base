@@ -32,9 +32,45 @@ $line-color: rgba(255, 255, 255, 0.3);
   align-items: center;
   justify-content: center;
 
-  h1{
+  h1 {
     color: white;
     font-family: variables.$font-base;
     font-size: 50px;
+  }
+}
+
+footer {
+  padding: 26px 0px 8px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+
+  background-color: variables.$color-vscode-bg;
+  color: white;
+
+  .Container_Footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      h4 {
+        padding-bottom: 10px;
+      }
+
+      p {
+        padding-left: 10px;
+      }
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
   }
 }

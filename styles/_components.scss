@@ -1,0 +1,153 @@
+@use "variables";
+
+.Container_Skills {
+  display: flex;
+  justify-content: space-evenly;
+
+  .SkillList {
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 300px;
+
+    border: black solid 1px;
+    border-radius: 15px;
+
+    text-align: center;
+  }
+}
+
+#Contact {
+  width: 100%;
+  height: 100vh;
+  padding: 0px 100px;
+
+  display: flex;
+  align-items: center;
+
+  .Container_Contact {
+    padding: 30px;
+
+    display: flex;
+    gap: 40px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3), 0 12px 32px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+
+    background-color: variables.$color-vscode-bg;
+
+    .Container_ContactInfo {
+      width: 50%;
+
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      color: white;
+
+      h2 {
+        font-size: 40px;
+        color: orange;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+    }
+
+    .Vertical_Divisor{
+      width: 2px;
+
+      background-color: rgb(56, 56, 56);
+    }
+
+    .Container_Form {
+      width: 50%;
+
+      display: flex;
+      flex-direction: column;
+      border-radius: 15px;
+
+      color: white;
+
+      form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        input,
+        textarea {
+          border-style: none;
+          border-radius: 12px;
+
+          background-color: rgb(56, 56, 56);
+          color: white;
+        }
+
+        .FormData {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+
+          div {
+            width: 100%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            label,
+            input {
+              font-size: 18px;
+            }
+
+            input {
+              padding: 5px 10px;
+              width: 400px;
+            }
+          }
+        }
+
+        .FormMessage {
+          width: 100%;
+
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+
+          label,
+          textarea {
+            font-size: 18px;
+          }
+
+          textarea {
+            width: 100%;
+            height: 300px;
+            padding: 10px;
+
+            resize: none;
+
+            font-family: variables.$font-base;
+          }
+        }
+
+        .FormButton {
+          padding: 10px 50px;
+
+          font-size: 20px;
+          background-color: orange;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
