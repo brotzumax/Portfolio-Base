@@ -1,6 +1,6 @@
 @use "variables";
 
-.Container_Skills {
+/* .Container_Skills {
   display: flex;
   justify-content: space-evenly;
 
@@ -18,7 +18,7 @@
 
     text-align: center;
   }
-}
+} */
 
 #Contact {
   width: 100%;
@@ -151,6 +151,90 @@
             cursor: pointer;
           }
         }
+      }
+    }
+  }
+}
+
+#Skills {
+  width: 100%;
+  height: 100vh;
+
+  padding: 40px 100px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-color: variables.$color-bg-lightgray;
+
+  h2 {
+    font-size: 48px;
+    color: variables.$color-vscode-bg;
+    text-decoration: underline;
+  }
+
+  .Container_Skills {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    align-items: center;
+
+    h3 {
+      font-size: 30px;
+      color: rgb(88, 88, 88);
+    }
+
+    .Skills_Separator {
+      min-width: 2px;
+      height: 100%;
+      background-color: rgb(170, 170, 170);
+    }
+
+    .Frontend_Skills,
+    .Backend_Skills {
+      display: flex;
+      gap: 20px;
+    }
+
+    .Skill_Card {
+      padding: 20px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      gap: 10px;
+
+      background-color: white;
+      border-radius: 15px;
+
+      box-shadow:
+        inset 0 8px 24px 0 rgba(0, 0, 0, 0.40);
+
+      .Skill_Img {
+        min-height: 150px;
+
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 150px;
+        }
+      }
+
+      .Skill_Card_Separator {
+        width: 100%;
+        height: 1px;
+
+        background-color: grey;
+      }
+
+      span {
+        display: block;
+        text-align: center;
+
+        font-size: 18px;
+        font-weight: 500;
       }
     }
   }
